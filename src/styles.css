@@ -1,0 +1,51 @@
+/* Global theme: modern, classy, dark-green palette */
+:root {
+  --bg: #f6f8f6;
+  --surface: #ffffff;
+  --text: #1d2b21;
+  --muted: #5e6d62;
+  --brand: #2fbf71;
+  --border: rgba(0,0,0,0.08);
+  --section-border: rgba(0,0,0,0.12);
+}
+
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+/* Reset basics */
+* { box-sizing: border-box; }
+a { color: inherit; }
+h1, h2, h3, h4, h5 { font-weight: 600; }
+
+/* Utility containers */
+.page-container { min-height: calc(100dvh - 56px); }
+
+/* Account for fixed-top navbar */
+body { padding-top: 56px; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer; }
+.btn.primary { background: var(--brand); color: #0b1610; }
+
+/* Hero image overlay */
+.hero-header { min-height: 80vh; }
+.hero-header .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-header .hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.15), rgba(246,248,246,0.9)); }
+
+/* Icons */
+.facility-icon { width: 28px; height: 28px; opacity: 0.9; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.15)); }
+.pricing-icon { width: 44px; height: 44px; opacity: 0.9; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.15)); }
+
+/* Light cards */
+.elev-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 1px 2px rgba(16,24,40,0.04); }
+.section-muted { background: #eef4ef; }
+.section-white { background: var(--surface); }
+.section-framed { border: 1px solid var(--section-border); border-radius: 16px; }
+.text-muted-kgc { color: var(--muted) !important; }
+
+/* Testimonials scroller */
+.scroll-x { display: flex; overflow-x: auto; gap: 1rem; scroll-snap-type: x mandatory; padding-bottom: .5rem; }
+.scroll-x::-webkit-scrollbar { height: 8px; }
+.scroll-x::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); border-radius: 999px; }
+.review-card { flex: 0 0 360px; scroll-snap-align: start; }
+.stars { color: #f5b301; letter-spacing: 1px; }
