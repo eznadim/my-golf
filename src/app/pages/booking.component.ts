@@ -1,6 +1,6 @@
 import { Component, computed, effect, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { RouterLink, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 type CalendarCell = {
@@ -195,7 +195,7 @@ export class BookingComponent {
   form: FormGroup;
   showErrors = signal<boolean>(false);
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private route: ActivatedRoute) {
     this.form = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(2)]],
       phone: ['', [Validators.required, Validators.pattern(/^\d{10,}$/)]],
@@ -339,6 +339,16 @@ export class BookingComponent {
     const course = this.courseRatePerPlayer();
     const caddy = this.form.controls['caddy'].value ? 50 : 0;
     return players * (base + course) + caddy;
+  }
+
+  ngOnInit(): void {
+    // Read ?club= query parameter if present to pre-fill UI cues later (future enhancement)
+    const qp = this.route.snapshot.queryParamMap;
+    const club = qp.get('club');
+    if (club) {
+      // Currently we just keep it for potential display; no pricing change
+      // Example: could set a hidden control or show a badge
+    }
   }
 }
 

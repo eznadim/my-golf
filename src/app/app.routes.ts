@@ -8,6 +8,8 @@ import { NewsComponent } from './pages/news.component';
 import { EventsComponent } from './pages/events.component';
 import { TournamentsComponent } from './pages/tournaments.component';
 import { ContactComponent } from './pages/contact.component';
+import { ProfileComponent } from './pages/profile.component';
+import { AdminDashboardComponent } from './pages/admin-dashboard.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,5 +21,7 @@ export const routes: Routes = [
   { path: 'events', component: EventsComponent },
   { path: 'tournaments', component: TournamentsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'admin', component: AdminDashboardComponent },
   { path: '**', redirectTo: '' }
 ];

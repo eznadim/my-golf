@@ -7,127 +7,108 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <header class="hero-header position-relative pt-5">
-      <img src="assets/icons/kinrara1.png" alt="Kinrara Golf Club" class="hero-bg" />
+      <img src="assets/icons/golferbg.jpg" class="hero-bg" />
       <div class="hero-overlay"></div>
       <div class="container position-relative d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 75vh;">
-        <h1 class="display-4 fw-semibold">Kinrara Golf Club</h1>
-        <p class="lead opacity-75 mb-4">Now Refurbished Under New Management • Puchong</p>
+        <h1 class="hover-underline">GolfersGo</h1>
+        <p class="lead opacity-75 mb-4">One stop where all the golfers go</p>
         <div class="d-flex gap-2">
-          <a class="btn btn-success rounded-pill px-3" routerLink="/booking">Book Tee Time</a>
-          <a class="btn btn-outline-dark rounded-pill px-3" routerLink="/courses">Explore Courses</a>
+          <a class="btn btn-success rounded-pill px-3" routerLink="/booking">Become a Member</a>
+          <a class="btn btn-outline-dark rounded-pill px-3" routerLink="/courses">Explore Clubs</a>
         </div>
       </div>
     </header>
 
-    
-
-    <section id="about" class="py-5">
-      <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-12 col-lg-6">
-            <h2 class="display-6">Kinrara Golf Club</h2>
-            <p class="text-black-50 mb-3">
-              Kinrara Golf Club is a charming golf retreat nestled in the heart of Puchong, Selangor.
-              Established in 1993, this 18-hole championship course winds through rolling terrain and
-              lush greenery. Tree-lined fairways, strategic bunkers, and serene water features create
-              a tranquil, engaging experience for golfers of all levels.
-            </p>
-            <div class="d-flex flex-wrap gap-3">
-              <div class="border border-light border-opacity-25 rounded p-3">
-                <div class="small text-black-50">Hours</div>
-                <div class="fw-semibold">7:00am – 8:00pm (Everyday)</div>
-              </div>
-              <div class="border border-light border-opacity-25 rounded p-3">
-                <div class="small text-black-50">Phone</div>
-                <a class="fw-semibold text-decoration-none" href="tel:+60380762100">+60 3-8076 2100</a>
-              </div>
-              <div class="border border-light border-opacity-25 rounded p-3">
-                <div class="small text-black-50">Email</div>
-                <a class="fw-semibold text-decoration-none" href="mailto:kinraragolf@ssgsb.my">kinraragolf@ssgsb.my</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="ratio ratio-16x9 rounded border border-light border-opacity-25" style="background:url('https://images.unsplash.com/photo-1501706362039-c06b2d715385?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="features" class="py-5 section-muted">
-      <div class="container">
-        <div class="row text-center g-3">
-          <div class="col-12 col-md-4">
-            <div class="elev-card p-4 h-100">
-              <div class="display-5 fw-bold">18</div>
-              <div class="text-muted-kgc">Holes</div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="elev-card p-4 h-100">
-              <div class="display-5 fw-bold">71</div>
-              <div class="text-muted-kgc">Pars</div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="elev-card p-4 h-100">
-              <div class="display-5 fw-bold">5341</div>
-              <div class="text-muted-kgc">Meters</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-5 section-white">
+    <section id="how" class="py-5 section-white">
       <div class="container">
         <div class="text-center mb-4">
-          <span class="text-success text-uppercase small fw-semibold">Our Golf Courses</span>
-          <h2 class="display-6 mt-1">Find Your Perfect Round</h2>
-          <p class="text-white-50">Two refreshed layouts designed for every level of golfer.</p>
+          <span class="text-success text-uppercase small fw-semibold">How It Works</span>
+          <h2 class="display-6 mt-1">Book in minutes</h2>
+          <p class="text-white-50">Follow these simple steps to lock your tee time.</p>
         </div>
-        <div class="row g-4 section-framed p-3">
-          <div class="col-12 col-lg-6">
-            <div class="elev-card h-100">
-              <div class="row g-0 h-100">
-                <div class="col-md-5">
-                  <img src="assets/icons/kinrara2.jpeg" alt="Kinrara 9-hole" class="rounded-start w-100" style="height:220px; object-fit:cover;" />
+        <ol class="row g-4 section-framed p-3 list-unstyled m-0">
+          <li class="col-12 col-md-6 col-lg-4">
+            <div class="elev-card h-100 p-3">
+              <div class="h4 m-0">1. Choose a club</div>
+              <p class="text-muted-kgc mb-0">Pick Kinrara, Kota Permai, or Bukit Kemuning.</p>
                 </div>
-                <div class="col-md-7">
-                  <div class="card-body d-flex flex-column">
-                    <h3 class="h4 mb-2">9-Hole Course</h3>
-                    <p class="text-muted-kgc mb-3">Quick, technical layout ideal for practice rounds and evening play.</p>
-                    <ul class="text-muted-kgc small mb-4">
-                      <li>Par 34 • 2,900 yards</li>
-                      <li>New greens and tee boxes</li>
-                      <li>LED-lit driving range access</li>
-                    </ul>
-                    <div class="mt-auto">
-                      <a routerLink="/courses" class="btn btn-dark rounded-pill px-3">View Details</a>
+          </li>
+          <li class="col-12 col-md-6 col-lg-4">
+            <div class="elev-card h-100 p-3">
+              <div class="h4 m-0">2. Pick your date</div>
+              <p class="text-muted-kgc mb-0">Select a day with available sessions.</p>
+                    </div>
+          </li>
+          <li class="col-12 col-md-6 col-lg-4">
+            <div class="elev-card h-100 p-3">
+              <div class="h4 m-0">3. Fill the form</div>
+              <p class="text-muted-kgc mb-0">Tell us who’s playing and your preferences.</p>
+                  </div>
+          </li>
+          <li class="col-12 col-md-6 col-lg-4">
+            <div class="elev-card h-100 p-3">
+              <div class="h4 m-0">4. Pay with DuitNow QR</div>
+              <p class="text-muted-kgc mb-0">Instant confirmation once payment is received.</p>
+                </div>
+          </li>
+          <li class="col-12 col-md-6 col-lg-4">
+            <div class="elev-card h-100 p-3">
+              <div class="h4 m-0">5. Check in at counter</div>
+              <p class="text-muted-kgc mb-0">Provide your reservation name on arrival.</p>
+            </div>
+          </li>
+          <li class="col-12 col-md-6 col-lg-4">
+            <div class="elev-card h-100 p-3">
+              <div class="h4 m-0">6. Enjoy your tee time</div>
+              <p class="text-muted-kgc mb-0">Have a great round!</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="clubs" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="text-success text-uppercase small fw-semibold">Featured Clubs</span>
+          <h2 class="display-6 mt-1">Pick a club, book in seconds</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="card elev-card h-100 overflow-hidden">
+              <img src="assets/icons/kinrara1.png" alt="Kinrara Golf Club" class="w-100" style="height:180px; object-fit:cover;" />
+              <div class="p-3">
+                <h3 class="h5 mb-1">Kinrara Golf Club</h3>
+                <p class="text-muted-kgc small mb-2">Puchong, Selangor</p>
+                <div class="d-flex gap-2">
+                  <a class="btn btn-dark btn-sm rounded-pill px-3" href="https://kinraragolfclub.com/" target="_blank" rel="noopener">View</a>
+                  <a class="btn btn-success btn-sm rounded-pill px-3" [routerLink]="'/booking'" [queryParams]="{ club: 'kinrara' }">Book</a>
+                </div>
+              </div>
                     </div>
                   </div>
+          <div class="col-12 col-md-4">
+            <div class="card elev-card h-100 overflow-hidden">
+              <img src="assets/icons/kinrara2.jpeg" alt="Kota Permai Golf & Country Club" class="w-100" style="height:180px; object-fit:cover;" />
+              <div class="p-3">
+                <h3 class="h5 mb-1">Kota Permai G&CC</h3>
+                <p class="text-muted-kgc small mb-2">Kota Kemuning, Selangor</p>
+                <div class="d-flex gap-2">
+                  <a class="btn btn-dark btn-sm rounded-pill px-3" href="https://www.kotapermai.com.my/" target="_blank" rel="noopener">View</a>
+                  <a class="btn btn-success btn-sm rounded-pill px-3" [routerLink]="'/booking'" [queryParams]="{ club: 'kota-permai' }">Book</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6">
-            <div class="elev-card h-100">
-              <div class="row g-0 h-100">
-                <div class="col-md-5">
-                  <img src="assets/icons/kinrara3.png" alt="Kinrara 18-hole" class="rounded-start w-100" style="height:220px; object-fit:cover;" />
-                </div>
-                <div class="col-md-7">
-                  <div class="card-body d-flex flex-column">
-                    <h3 class="h4 mb-2">18-Hole Championship</h3>
-                    <p class="text-muted-kgc mb-3">Signature fairways with strategic bunkering and newly contoured greens.</p>
-                    <ul class="text-muted-kgc small mb-4">
-                      <li>Par 72 • 6,500 yards</li>
-                      <li>Refurbished clubhouse facilities</li>
-                      <li>Carts with GPS and scoring</li>
-                    </ul>
-                    <div class="mt-auto">
-                      <a routerLink="/courses" class="btn btn-dark rounded-pill px-3">View Details</a>
-                    </div>
-                  </div>
+          <div class="col-12 col-md-4">
+            <div class="card elev-card h-100 overflow-hidden">
+              <img src="assets/icons/kinrara3.png" alt="Bukit Kemuning Golf & Country Resort" class="w-100" style="height:180px; object-fit:cover;" />
+              <div class="p-3">
+                <h3 class="h5 mb-1">Bukit Kemuning GCR</h3>
+                <p class="text-muted-kgc small mb-2">Shah Alam, Selangor</p>
+                <div class="d-flex gap-2">
+                  <a class="btn btn-dark btn-sm rounded-pill px-3" href="https://www.bkgcr.com/" target="_blank" rel="noopener">View</a>
+                  <a class="btn btn-success btn-sm rounded-pill px-3" [routerLink]="'/booking'" [queryParams]="{ club: 'bukit-kemuning' }">Book</a>
                 </div>
               </div>
             </div>
@@ -135,7 +116,6 @@ import { RouterLink } from '@angular/router';
         </div>
       </div>
     </section>
-
 
     <section id="facilities" class="py-5">
       <div class="container">
@@ -285,25 +265,68 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <section id="contact" class="py-5">
+    
+    
+    <section id="faqs" class="py-5 section-white">
       <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-12 col-lg-6">
-            <h2 class="display-6">Contact</h2>
-            <ul class="list-unstyled mb-4">
-              <li class="mb-1"><strong>Location:</strong> Jalan Kinrara 6, Bandar Kinrara 6, 47100 Puchong, Selangor</li>
-              <li class="mb-1"><strong>Phone:</strong> <a href="tel:+60380762100" class="text-decoration-none">+60 3-8076 2100</a></li>
-              <li class="mb-1"><strong>Email:</strong> <a href="mailto:kinraragolf@ssgsb.my" class="text-decoration-none">kinraragolf@ssgsb.my</a></li>
-            </ul>
-            <div class="d-flex gap-2">
-              <a routerLink="/booking" class="btn btn-success rounded-pill px-3">Book Tee Time</a>
-              <a href="mailto:kinraragolf@ssgsb.my" class="btn btn-outline-light rounded-pill px-3">Contact Us</a>
+        <h2 class="display-6 text-center mb-4">FAQs</h2>
+        <div class="accordion section-framed" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1c" aria-expanded="true" aria-controls="faq1c">
+                Can I use GolfersGo for free?
+              </button>
+            </h2>
+            <div id="faq1c" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes. The free version works great for individual play. Track scores, follow friends' games, and leave comments in real time.
+              </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6">
-            <div class="ratio ratio-16x9 rounded border border-light border-opacity-25">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.211238107514!2d101.6548121!3d3.0379484999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4b93f8046d75%3A0x882b541b90f7b4ec!2sKinrara%20Golf%20Club!5e0!3m2!1sen!2smy!4v1757342307218!5m2!1sen!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2c" aria-expanded="false" aria-controls="faq2c">
+                Is GolfersGo the right golf app for me?
+              </button>
+            </h2>
+            <div id="faq2c" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                If you enjoy tracking scores and playing with friends, you'll love GolfersGo. Create games, share live leaderboards, and compare with your group.
+              </div>
             </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3c" aria-expanded="false" aria-controls="faq3c">
+                Where can I find the app?
+              </button>
+            </h2>
+            <div id="faq3c" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                GolfersGo is available for iOS and Android in the App Store and Google Play.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="app" class="py-5 section-muted">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 col-lg-6">
+            <h2 class="display-6 mb-2">Get the GolfersGo app</h2>
+            <p class="text-muted-kgc mb-3">Everything you need to have more fun on the golf course.</p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/icons/appstore.png" height="44" />
+              <img src="assets/icons/googleplay.png" height="44" />
+              <img src="assets/icons/qr.png" height="72" />
+            </div>
+          </div>
+          <div class="col-8 col-lg-6">
+            
+              <img src="assets/icons/mobileapp.png" style="width : 70%;" />
+            <div class="ratio ratio-16x9 rounded border border-light border-opacity-25" style="background:url('assets/app/app-preview.png') center/cover no-repeat;"></div>
           </div>
         </div>
       </div>
@@ -313,8 +336,8 @@ import { RouterLink } from '@angular/router';
     `
     :host { display: block; }
     header { border-bottom: 1px solid rgba(255,255,255,0.06); }
-    .card { border-radius: 0.75rem; transition: transform .15s ease, border-color .15s ease; }
-    .card:hover { transform: translateY(-2px); border-color: rgba(255,255,255,0.4) !important; }
+    .card { border-radius: 0.75rem; transition: transform 0.5s; }
+    .card:hover { transform: scale(1.1); }
     `
   ]
 })
